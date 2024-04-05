@@ -1,0 +1,50 @@
+
+.item-card {
+    border: 2px solid black;  
+    padding: 30px 30px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    /* background-color: lightcyan; */
+}
+
+.item-card button {
+    background-color: black;
+    padding: 10px 10px;
+    color: white;
+    border-radius: 20px;
+} 
+.App {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .App-item {
+    flex: 1;
+    max-width: 300px;
+    padding: 20px;
+  }
+
+  .cart li {
+    list-style: square;
+    margin-bottom: 15px;
+}  
+.App-cart {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 0px 40px;
+}
+
+  @media screen and (max-width: 768px) {
+    .App {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .App-item, .App-cart {
+      max-width: 100%;
+    }
+  }
